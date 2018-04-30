@@ -1,6 +1,6 @@
 {
-  "name": "cachehelper",
-  "version": "0.0.1",
+  "name": "quick-redis",
+  "version": "0.0.2",
   "description": "a middle for operating redis",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/TimLiu1/cacheHelper/issues"
   },
-  "homepage": "https://github.com/TimLiu1/cacheHelper#readme"
+  "homepage": "https://github.com/TimLiu1/cacheHelper#readme",
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  },
+  "dependencies": {
+    "ioredis": "^3.2.2"
+  }
 }

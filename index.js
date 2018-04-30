@@ -1,1 +1,2 @@
-console.log('welcome to redis cacheHelper');
+let redis =  module.exports = require('./lib/cache');
+
