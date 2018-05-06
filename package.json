@@ -1,6 +1,6 @@
 {
   "name": "quick-redis",
-  "version": "0.0.2",
+  "version": "0.0.22",
   "description": "a middle for operating redis",
   "main": "index.js",
   "scripts": {
