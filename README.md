@@ -4,3 +4,4 @@
 npm i quick-redis
 
 ```
+# EA
