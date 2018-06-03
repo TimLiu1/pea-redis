@@ -62,7 +62,7 @@ await del('a');
 
 ```
 
-Function and params Details:
+# Function and params Details:
 
 
 0. connect to the redis
