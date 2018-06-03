@@ -1,9 +1,6 @@
 
 [![npm package](https://badge.fury.io/js/pea-redis.svg)](https://www.npmjs.com/package/pea-redis)
 
-[![support]async await]
-
-
 
 # Features
 Pea-redis is based on ioredis, it support async/await usage,it's a further encapsulated and functionally extended functional class. Based on the basic functions of ioredis, it adds operations on objects, and hash, making it easier for Nodejs developers to operate redis.
