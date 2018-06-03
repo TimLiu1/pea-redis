@@ -1,8 +1,7 @@
-[![Build Status]((https://travis-ci.org/luin/ioredis.svg?branch=master))]
+[![Build Status](https://github.com/TimLiu1/pea-redis.svg?branch=master)](https://github.com/TimLiu1/pea-redis)
 
-[![npm package]0.0.15](https://www.npmjs.com/package/pea-redis)
+[![npm package](https://badge.fury.io/js/pea-redis.svg)](https://www.npmjs.com/package/pea-redis)
 
-[![support]async await]
 
 
 
