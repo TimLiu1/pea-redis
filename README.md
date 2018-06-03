@@ -58,6 +58,27 @@ await del('a');
 
 ```
 
+If you want to use the native method of ioredis, you only need to get the ioredis object and then you can use any ioredis method which you want
+
+For example:
+
+```javascript
+
+// get ioredis object
+const ioRedis = peaRedis.getRedis();
+
+// you can use the native method of ioredis through ioRedis object
+ioRedis.set('foo', 'bar');
+ioRedis.get('foo', function (err, result) {
+  console.log(result);
+});
+
+...
+
+```
+
+see more ioRedis function through: https://github.com/luin/ioredis
+
 # Function and params Details:
 
 
@@ -158,7 +179,15 @@ hgetValue: async function (cacheName, key) {}
 
 ```javascript
 
- del: async function (key) {}
+del: async function (key) {}
+
+``` 
+
+11. get ioredis object
+
+```javascript
+
+getRedis: () => {}
 
 ``` 
 
@@ -169,3 +198,8 @@ I'm happy to receive bug reports, fixes, documentation enhancements, and any oth
 And since I'm not a native English speaker, if you find any grammar mistakes in the documentation, please also let me know. :)
 
 # Contributors
+<table><tr><td width="20%"><a href="https://github.com/TimLiu1"><img src="https://avatars2.githubusercontent.com/u/16770736?s=460&v=4" /></a><p align="center">TimLiu1</p></td><td width="20%"><a href="https://github.com/InCodingNowLiu"><img src="https://avatars0.githubusercontent.com/u/31758568?s=460&v=4" /></a><p align="center">InCodingNowLiu</p></td></tr></table>
+
+# License
+
+MIT
