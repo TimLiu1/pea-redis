@@ -5,8 +5,8 @@
 # Features
 Pea-redis is based on ioredis, it support async/await usage,it's a further encapsulated and functionally extended functional class. Based on the basic functions of ioredis, it adds operations on objects, and hash, making it easier for Nodejs developers to operate redis.
 
-0. set/get Object into/from redis, easy for Nodejs developer to use
-1. hash set and hash get more easy, only one line of code
+1. set/get hset/hget Object into/from redis, easy for Nodejs developer to use
+2. it support async/await usage
 
 
 # Quick Start
@@ -20,31 +20,32 @@ $ npm i pea-redis
 
 ## Basic Usage
 
+### set/get Object
 ```javascript
-
-const peaRedis = require('pea-redis');
-
-peaRedis.connect({}); //see the detail config of ioredis
-
-// set object to the redis
 await peaRedis.set('a',{'a':1});
-
-// hash set object to the redis 
-await peaRedis.hset('obj','b',{b:1});
-
-// set string to the redis
-await peaReids.setValue('c', 'this is string');
-
-// get object from the redis 
 const a = await peaRedis.get('a'); // a = {'a':1}
+```
+### set/get Value
+```javascript
+await peaReids.setValue('b', 'this is string');
+const c = await peaReids.getValue('b'); // b = this is string;
+```
 
-// hash get object from the redis
-const b = await peaRedis.hget('obj', 'b'); // b = {b:1}
+### hset/hget Object
+```javascript
+await peaRedis.hset('c','c',{c:1});
+const b = await peaRedis.hget('c', 'c'); // c = {c:1}
 
-// get value from the redis
-const c = await peaReids.getValue('c'); // c = this is string;
 
 ```
+
+### hset/hget Value
+```javascript
+await peaRedis.hsetValue('d','d','d');
+const b = await peaRedis.hgetValue('d', 'd'); // d
+
+```
+
 
 If you want to delete some cache in the redis, it's more easier than ioredis
 
