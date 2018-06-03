@@ -1,6 +1,6 @@
 {
-  "name": "quick-redis",
-  "version": "0.0.25",
+  "name": "pea-redis",
+  "version": "0.0.15",
   "description": "a middle for operating redis",
   "main": "index.js",
   "scripts": {

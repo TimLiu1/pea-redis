@@ -1,2 +1,4 @@
-let redis =  module.exports = require('./lib/cache');
+
+module.exports = require('./lib/cache');
+
 
