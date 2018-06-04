@@ -22,27 +22,34 @@ $ npm i pea-redis
 
 ### set/get Object
 ```javascript
+(async () => {
 await peaRedis.set('a',{'a':1});
-const a = await peaRedis.get('a'); // a = {'a':1}
+const a = await peaRedis.get('a'); // a = {'a':1} 
+})();
+
 ```
 ### set/get Value
 ```javascript
-await peaReids.setValue('b', 'this is string');
+(async () => {
+ await peaReids.setValue('b', 'this is string');
 const c = await peaReids.getValue('b'); // b = this is string;
+})();
 ```
 
 ### hset/hget Object
 ```javascript
+(async () => {
 await peaRedis.hset('c','c',{c:1});
 const b = await peaRedis.hget('c', 'c'); // c = {c:1}
-
-
+})();
 ```
 
 ### hset/hget Value
 ```javascript
+(async () => {
 await peaRedis.hsetValue('d','d','d');
 const b = await peaRedis.hgetValue('d', 'd'); // d
+})();
 
 ```
 
